@@ -1,0 +1,200 @@
+* {
+    background: #e9ecf8;
+    font-family: 'Inter' , sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-left: 100px;
+    
+}
+
+.logoImg{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.elementInput {
+    padding-right: 20px;
+    padding-bottom: 30px;
+    
+
+}
+
+.inputText {
+    font-size: 32px;
+    border: none;
+    color: #0A3871;
+    margin-top: 50px;
+    margin-bottom: 345px;
+    padding-top: 10px;
+    text-transform: lowercase;
+    
+}
+
+::placeholder { color: #0A3871; }
+    .inputText:focus {
+    outline: none;
+}
+
+.imgIluster {
+    margin-top: 40px;
+    margin-left: 100px;
+    position: absolute;
+    width: 336px;
+    top: 150px;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.elementForm {
+    font-weight: 300;
+    font-size: 30px;
+    background: white;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    word-wrap: break-word;
+    position: fixed;
+    width: 400px;
+    height: 780px;
+    left: 1000px;
+    top: 35px;
+}
+
+.buttons {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0%;
+    width: fixed 680px;
+    height: 67px;
+    gap: 24px;
+    
+}
+
+.button{
+    font-size: 32px;
+    background-color: #0A3871;
+    border: 19x solid #0A3871;
+    border-radius: 24px;
+    color: #d8dfe8;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.botao__descriptografar {
+    font-size: 32px;
+    background-color: #d8dfe8;
+    border: 19x solid #d8dfe8;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.buttonForm {
+    font-size: 32px;
+    background-color: #0A3871;
+    border: 19x solid #0A3871;
+    border-radius: 24px;
+    color: #d8dfe8;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+.information {
+    margin-top: 200px;
+    color: #495057;
+    font-size: 20px;
+    height: 18px;
+    opacity: 80%;
+    margin-top: 90px;
+    padding: 10px;
+}
+
+
+.textOne {
+    color: #343a40;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    margin-top: 370px;
+    margin-left: 30px;
+    position: absolute;
+    width: 336px;
+    top: 150px;
+}
+.textTwo {
+    color: #343a40;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    text-align: center;
+    margin-top: 450px;
+    margin-left: 30px;
+    position: absolute;
+    width: 336px;
+    top: 150px;
+}
+
+
+.inputForm {
+    border: none;
+    font-size: 32px;
+    color: #0A3871;
+    margin-left: 10px;
+    background: white;
+    margin-top: 20px;
+}
+
+.rodape {
+    margin-top: 106px;
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+.rodapeText{
+    background-color: #0A3871;
+}
+
+
+@media (max-width: 1200px) {
+    .logo_inicio {
+        padding: 10%;
+    }
+    
+    .conteudo {
+        justify-content: center;
+    }
+
+
+    .elements {
+        width: auto;
+    }
+
+    .elementForm {
+        width: auto;
+    }
+}
