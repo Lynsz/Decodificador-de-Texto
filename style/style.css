@@ -8,15 +8,17 @@
 
 main {
     display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-left: 100px;
-    
+    padding-left: 80px;
+
 }
 
 .logoImg{
     margin-top: 10px;
-    margin-left: 10px;
+    
+}
+
+.elements {
+    margin-right: 10px;
 }
 
 .elementInput {
@@ -34,7 +36,6 @@ main {
     margin-bottom: 345px;
     padding-top: 10px;
     text-transform: lowercase;
-    
 }
 
 ::placeholder { color: #0A3871; }
@@ -47,10 +48,10 @@ main {
     margin-left: 100px;
     position: absolute;
     width: 336px;
-    top: 150px;
-    background-color: white;
+    top: 30px;
     margin-left: 30px;
 }
+
 
 .elementForm {
     font-weight: 300;
@@ -59,15 +60,15 @@ main {
     border: none;
     border-radius: 32px;
     color: #0A3871;
-    margin-left: center;
-    padding-top: 10px;
+    margin-left: 808px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     padding-left: 10px;
-    word-wrap: break-word;
     position: fixed;
-    width: 400px;
-    height: 780px;
-    left: 1000px;
-    top: 35px;
+    width: 22%;
+}
+.elementForm:focus {
+    outline: none;
 }
 
 .buttons {
@@ -114,10 +115,9 @@ main {
     cursor: pointer;
     height: 67px;
     width: 328px;
-    margin-top: 20px;
-    margin-left: 30px;
+    
+    
 }
-
 
 .information {
     margin-top: 200px;
@@ -129,15 +129,13 @@ main {
     padding: 10px;
 }
 
-
 .textOne {
     color: #343a40;
     font-weight: 700;
     font-size: 24px;
     border: none;
-    background-color: white;
     text-align: center;
-    margin-top: 370px;
+    margin-top: 230px;
     margin-left: 30px;
     position: absolute;
     width: 336px;
@@ -147,9 +145,8 @@ main {
     color: #343a40;
     font-size: 16px;
     font-weight: 400;
-    background-color: white;
     text-align: center;
-    margin-top: 450px;
+    margin-top: 320px;
     margin-left: 30px;
     position: absolute;
     width: 336px;
@@ -164,6 +161,7 @@ main {
     margin-left: 10px;
     background: white;
     margin-top: 20px;
+    width: 90%;
 }
 
 .rodape {
@@ -182,19 +180,63 @@ main {
 
 @media (max-width: 1200px) {
     .logo_inicio {
-        padding: 10%;
+        padding: 5% 10 6 3;
     }
     
-    .conteudo {
-        justify-content: center;
+    main {
+        padding-left: 30px;
+        margin-bottom: 80px;
+        padding-left: 20px;
+        
     }
-
-
-    .elements {
-        width: auto;
+    .inputText {
+    margin-bottom: 60px;
     }
-
+    
     .elementForm {
-        width: auto;
+        background: white;
+        border: none;
+        border-radius: 72px;
+        color: #0A3871;
+        margin-left: 5px;
+        margin-right: 10px;  
+        margin-top: 480px;
+        position:absolute;
+        width: 660px
+    }
+
+    .inputForm {
+        margin-left: 10px;
+        background: white;
+        margin-top: 20px;
+    }
+    .imgIluster {
+        display: none;
+    }
+    
+    .textOne { 
+        border: none;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 180px;
+        position: absolute;
+        width: 336px;
+        top: 0px;
+    }
+    .textTwo {
+        
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 180px;
+        position: absolute;
+        width: 336px;
+        top: 80px;
+    }
+    .buttonForm {
+        margin-left: 170px;
+        margin-bottom: 20px;
+    }
+    .rodape {
+        display: none;
     }
 }
