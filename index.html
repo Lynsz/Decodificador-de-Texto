@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Decodificador de Texto</title>
 </head>
     <header class="logo_inicio">
-        <img src="/imagens/alura icon.png" alt="Logo Alura" class="logoImg">
+        <img src="imagens/alura icon.png" alt="Logo Alura" class="logoImg">
     </header>
 <body>
     <main>   
@@ -15,8 +15,9 @@
             <div class="elementInput">
                 <textarea id="inputText" name='opcao' class="inputText" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
             </div>
-            <div>
+            <div class="alerta_text_icon">
                 <img src="/imagens/exclamação.png" class="iconInformation" alt="Icone de informação">
+            <div>
                 <span class="information">Apenas letras minúsculas e sem acento.</span>
             </div>
 
@@ -25,19 +26,25 @@
                 <button id="decrypt" class="button">Descriptografar</button>
             </div>
         </section>
+
         <section class="elementForm">
+
+            <div class="elementForm_direita">
+                <textarea class="inputForm" id="inputForm" ></textarea>      
                 <textarea class="inputForm" id="inputForm" cols="18" rows="12" style="display: none;"></textarea>
-                <img src="/imagens/imagem d.png" alt="Ilustração de Pesquisa" id="imgIcon" class="imgIluster">
+                <img src="imagens/imagem d.png" alt="Ilustração de Pesquisa" id="imgIcon" class="imgIluster">
             <div class="informationForm">
                 <span id="textOne" class="textOne">Nenhuma mensagem encontrada</span>
                 <span id="textTwo" class="textTwo">Digite um texto que você deseja criptografar ou descriptografar</span>
             </div>
+            <div class="button_form">
                 <button class="buttonForm" id="buttonForm" style="display: none;">Copiar</button>
-                </section>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
         <a class="rodapeText">Desenvolvido por Kethelyn Carvalho</a>
     </footer>
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
