@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    gap: 30px;    
+    gap: 32px;    
 }
 
 main {
@@ -23,6 +23,7 @@ main {
 }
 
 .logoImg{
+    display: flex;
     margin-top: 20px;
     
 }
@@ -37,15 +38,17 @@ main {
 
 .alerta_text_icon {
     display: flex;
-    margin-bottom: 0vh;
-    
-   
+    margin-bottom: 0vh;   
 }
 
 .elementInput {
     display: flex;
-    margin-bottom: 49vh;
+    margin-bottom: 40vh;
     
+}
+
+.information_div{
+    display: flex;
 }
 
 .iconInformation {
@@ -53,12 +56,11 @@ main {
     height: 30px;
 }
 
-.inputText {
-    
+.inputText { 
+    display: flex;   
     font-size: 32px;
     border: none;
-    color: #0A3871;    
-    
+    color: #0A3871;       
 }
 
 ::placeholder { color: #0A3871; }
@@ -69,19 +71,23 @@ main {
 .elementForm_direita {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
     
 }
 
 .imgIluster {   
    display: flex;
    width: 30;
-   height: 500px;
+   height: 280px;
    
 }
 
 
 .elementForm {
-    display: flex;       
+    display: flex;
+    flex-direction: column;       
     font-weight: 300;
     font-size: 10px; 
     border: none;
@@ -136,7 +142,7 @@ main {
     border-radius: 24px;
     color: #d8dfe8;
     height: 67px;
-    width: 328px;
+    width: 100%;
     
     
 }
@@ -154,9 +160,10 @@ main {
 
 .textOne {
     display: flex;
-    color: #343a40;
-    font-size: 24px;
+    color: #020303;
+    font-size: 30px;
     border: none;
+    
      
     
     
@@ -175,7 +182,7 @@ main {
     border: none;
     font-size: 32px;
     color: #0A3871;  
-    height: 70%;  
+    height: 100%;  
 }
 
 .rodape {
@@ -195,41 +202,55 @@ main {
 
     body {
         display: flex;
-        align-content: space-between;
-        gap: 15px;
-           
+        flex-direction: column;
+        gap: 0px; 
+        padding-top: 26px;   
     }
     
     main {
-        display: flex;       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 0px;       
         margin:  0px;
-        flex-wrap: wrap;       
-                
+        flex-direction: column; 
+        gap: 20px;   
+        height: 60%;
+    }
+
+    .logoImg{
+        display: flex;
+        margin: 5px;
+        
     }
     
     .elements {
-        display: flex;        
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
         flex-direction: column;
         align-content: space-between;
-        margin: 0;  
-        height: 0vh; 
+        width: 90%;
+        gap: 10px;
     }
     .elementInput {
         display: flex;
-        align-content: space-between;
-         
+        margin: 0;    
+        width: 100%;
+        height: 100%;   
     }
 
-    .elementInput {
+    .imgIluster {   
         display: flex;
-        margin: 0;
-        width: 100%;
-        
-    }
+        width: 30;
+        height: 200px; 
+        ;     
+     }
 
     .button_form {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
     
     .buttons {
@@ -242,133 +263,145 @@ main {
         
     }
     
-    .button, .botao__descriptografar, .buttonForm {
-        width: 360px; /* Ajusta a largura dos botões */
+    .button, .botao__descriptografar {
+        width: 90%; /* Ajusta a largura dos botões */
     }
     .inputForm {
         display: flex;
-        padding: 0px; 
+        margin: 0px;
+        padding: 30px;
         border: none;
         font-size: 32px;
         color: #0A3871;
-        width: 100%; 
+        height: 220px;
+        width: 100%;
     }
 
     .elementForm {
         display: flex;
         flex-direction: column;
-        align-content: space-between;
         font-size: 20px; 
         border-radius: 100px;
         color: #0A3871;
         width: 90%;
+        gap: 10px;   
+    }
+
+    .imgIluster {
+         
+        display: flex;
+        width: 30%;
+        height: 8%;  
+    }
+
+    .textOne {
+        font-size: 30px;
+        
+    
+    }
+    .textTwo {
+        font-size: 20px;   
+        
+    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        height: 67px;
+        gap: 10px;
+        width: 100%;    
     }
 
     .elementForm_direita {
         display: flex;
-        justify-content: center;
-        height: 70%;
-        width: 100%;   
+        height: 0%;
+        width: 100%;
+        gap: 30px;
+        
     }
 
-    .buttonForm {
-        
+    .buttonForm {  
+        display: flex;  
         font-size: 32px;
-        background-color: #0A3871;
-        border: 19x solid #0A3871;
         border-radius: 24px;
-        color: #d8dfe8;      
+        color: #d8dfe8;    
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;     
+       
+    }
+    .rodapeText {
+        display: flex;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 479px) {
 
     body {
         display: flex;
-        align-content: space-between;
-        gap: 0px;
-           
-    }
-    
-    main {
-        display: flex;       
-        margin:  0px;
-        flex-direction: column;                      
-    }
-    
-    .elements {
-        display: flex;
         flex-direction: column;
-        align-content: space-between;
-        font-size: 20px; 
-        border-radius: 100px;
-        color: #0A3871;
-        width: 90%;
+        gap: 10px;    
     }
 
-    .elementInput {
+    main {
         display: flex;
-        align-content: space-between;
-         
-    }
-
-    .elementInput {
-        display: flex;
-        margin: 0;
-        width: 50%;
-        
-    }
-
-    .button_form {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .buttons {
-        display: flex;
+        padding-top: 0px;
+        padding-bottom: 1px;
+        justify-content: space-around;
         align-items: center;
-        margin-top: 0px;
-        padding: 0%;
-        height: 67px;
-        gap: 15px;
+        flex-direction: column; 
+        gap: 20px;   
         
     }
-    
-    .button, .botao__descriptografar, .buttonForm {
-        width: 360px; /* Ajusta a largura dos botões */
+
+    .button{
+        font-size: 18px;
+ 
+       
     }
+
+    .buttonForm {  
+        display: flex;  
+        font-size: 18px; 
+    }
+
+    .imgIluster {   
+        display: flex;
+        width: 50%;
+        height: 80%;
+        
+     }
+
+     .textOne {
+        font-size: 20px;
+        
+    
+    }
+    .textTwo {
+        font-size: 20px;   
+        
+    }
+
+    .information {
+       
+        font-size: 20px;
+  
+    }
+
     .inputForm {
         display: flex;
-        padding: 0px; 
+        margin: 0px;
+        padding: 30px;
         border: none;
         font-size: 32px;
         color: #0A3871;
-        width: 100%; 
+        height: 170px;
+        width: 100%;
     }
 
-    .elementForm {
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        font-size: 20px; 
-        border-radius: 100px;
-        color: #0A3871;
-        width: 90%;
-    }
-
-    .elementForm_direita {
-        display: flex;
-        justify-content: center;
-        height: 70%;
-        width: 100%;   
-    }
-
-    .buttonForm {
-        
-        font-size: 32px;
-        background-color: #0A3871;
-        border: 19x solid #0A3871;
-        border-radius: 24px;
-        color: #d8dfe8;      
-    }
 }
